@@ -1,0 +1,311 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --hero-bg : rgba(0, 0, 12, 1); 
+  --primary-color: #fff;
+  --text-color: #C5C5C5;
+  --btn-color: #27AE60;
+  --header-bg: rgba(38, 63, 63, 1); 
+  --about-bg: rgba(242, 197, 113, 1); 
+  --heading-span-color: rgba(242, 71, 55, 1);
+  --service-bg: rgba(191, 59, 11, 1); 
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    /* justify-content: center; */
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+/*************************************************************/
+/************************** Header ***************************/
+/*************************************************************/
+
+header{
+    background: var(--header-bg);
+    padding-top: 1rem;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    /* position: absolute; */
+    z-index: 500;
+    
+}
+.header-wrapper .navbar .nav-list{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 1rem;
+    gap: 1.5rem;
+    top: ;
+    font-weight: 600;
+    position: sticky;
+    
+}
+
+.navbar .nav-list .list-item a{
+    color: var(--primary-color);
+    padding: 1rem;
+    background: var(--hero-bg);
+    border-radius: 8px;
+
+}
+
+.navbar .list-item a:hover{
+    background: var(--btn-color);
+}
+/*************************************************************/
+/************************** Hero  ***************************/
+/*************************************************************/
+.hero-container{
+    /* background: var(--hero-bg); */
+    color: var(--primary-color);
+    padding: 3rem 0;
+    background: #001609;
+}
+
+.hero-container .container .hero{
+    display: flex;
+    justify-content: center;
+    /* gap: 5em; */
+    /* border: 3px solid #27AE60; */
+    
+}
+
+.container .hero .hero-card{
+    /* border: 1px solid #C5C5C5; */
+    flex: 1;
+    padding: 2rem;
+    align-content: center;
+    
+    /* align-items: center; */
+    /* flex-shrink: 2; */
+    flex-grow: 1;
+    width: 100%;
+}
+
+span{
+    color: var(--heading-span-color);
+}
+
+br{
+    padding: 0;
+    margin: 0;
+}
+
+#logo h1{
+    color: var(--about-bg);
+    border-bottom: 1px solid var(--text-color);
+}
+.hero-card h1{
+    padding: 1rem;
+    text-align: center;
+    /* color: var(--); */
+}
+
+.hero-card img{
+    padding-top: 1rem;
+    width: 100%;
+    border-radius: 810px;
+}
+.hero-card h3{
+    color: aqua;
+    text-align: center;
+}
+
+.hero-card #hero-text{
+    /* text-align: center; */
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+.hero .btn{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+.hero-card button{
+    /* align-items: center; */
+    padding: .8rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border-style: none;
+
+}
+
+.btn button:hover{
+    background: var(--btn-color);
+    color: var(--primary-color);
+}
+/*************************************************************/
+/************************** About ***************************/
+/*************************************************************/
+.about{
+    /* background: var(--about-bg); */
+    /* border-bottom: 1px solid #27AE60; */
+    padding: 2rem 0;
+}
+
+.about .container .about-cards{
+    /* border: 3px solid #27AE60; */
+    padding: 1rem 0;
+}
+
+ .about-cards .socials{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    background: #10b95627;
+    padding: 2rem;
+    border-radius: 8px;
+
+}
+.about-cards .social-link{
+    background: #27AE60;
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 550;
+    color: var(--primary-color);
+}
+
+.about-cards h2{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 1px solid #27AE60;
+    text-align: center;
+}
+
+.about-cards p{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    float: none;
+}
+/*************************************************************/
+/************************** Services ***************************/
+/*************************************************************/
+
+.services{
+    background: var(--about-bg);
+    padding: 1rem 0;
+}
+
+.services .service-container{
+    display: flex;
+    align-content: center;
+    gap: 5rem;
+    padding: 2rem 0;
+}
+
+.services .service-container .service-cards{
+    background: #10b95627;
+    padding: 1rem;
+    flex: 1;
+    border-radius: 8px;
+
+}
+
+.service-wrapper h2{
+    text-align: center;
+    padding: 2rem 0 ;
+    border-bottom: 1px solid var(--btn-color);
+}
+/*************************************************************/
+/************************** Skills ***************************/
+/*************************************************************/
+.skills{
+    background: var(--header-bg);
+}
+
+.skills h2{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--btn-color);
+}
+.skills .skills-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    /* background: var(--btn-color); */
+}
+
+.skills-wrapper .skill-card{
+    padding: 2rem 0;
+    flex: 1;
+
+}
+
+.skill-card p{
+    padding: .3rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* to implement icons */
+.skill-card strong{
+    color: var(--btn-color);
+    font-weight: 800;
+}
+
+
+
+/************************** Get in touch ********************/
+.contact-ctn .container .contact-box{
+    padding: 3rem 0;
+}
+
+.contact-box div{
+    display: flex;
+    
+}
+
+input{
+    padding: .8rem;
+    border-radius: 8px;
+    border-style: none;
+    background: #93949327;
+}
+
+/*************************************************************/
+/************************** Footer ***************************/
+/*************************************************************/
+
+footer{
+    background: var(--header-bg);
+    /* height: 48px; */
+    padding: 1.5rem 0;
+}
+
+footer p{
+    color: var(--text-color);
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+
+}
